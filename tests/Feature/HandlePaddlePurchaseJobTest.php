@@ -51,6 +51,7 @@ it('stores paddle purchase for given user', function () {
     Mail::fake();
     $user = User::factory()->create([
         'email' => 'test@test.es',
+        'roles' => 'user',
     ]);
     $course = \App\Models\Course::factory()->create([
         'paddle_product_id' => 'pro_01j449j1rwpm6e7y7ts4mp2wn4',
