@@ -28,7 +28,7 @@ it('stores paddle purchase', function () {
     // Arrange
     Mail::fake();
     $course = \App\Models\Course::factory()->create([
-        'paddle_product_id' => 'pro_01j449j1rwpm6e7y7ts4mp2wn4',
+        'paddle_product_id'=> 'pro_01j449j1rwpm6e7y7ts4mp2wn4',
     ]);
 
     // Act
