@@ -21,5 +21,5 @@ it('cannot be see by user', function () {
 
     //Act & Assert
     get(route('pages.Admin-dashboard'))
-        ->assertDontSeeText();
+        ->assertRedirect(route('pages.dashboard'));
 });
