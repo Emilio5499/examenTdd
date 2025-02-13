@@ -17,4 +17,5 @@ class PageCourseDetailsController extends Controller
 
         return view('pages.course-details', compact('course'));
     }
+
 }
